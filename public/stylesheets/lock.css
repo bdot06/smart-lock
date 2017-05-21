@@ -1,0 +1,107 @@
+/*  B O D Y
+-----------------------*/
+body{
+  
+   background: white;
+   font-family: 'Oxygen', sans-serif;
+  background-size: cover;
+
+}
+
+.wrapped{
+  color: grey;
+  background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-top: 50px;
+  margin-right: 75px;
+  margin-bottom: 10px;
+  margin-left: 75px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/*  W R A P P E R
+------------------------*/
+#wrapper{
+  text-align: center;
+  width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+#logoutButton{
+    background: #2c3e50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    position:relative;
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           box-shadow:0 3px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+/*  H E A D E R
+------------------------*/
+#myHeader{
+  color: black;
+  font-size:50px;
+  font-family: Times;
+  text-align: center;
+
+
+}
+/*  B U T T O N S
+-------------------------*/
+button{
+  display: block;
+  width:;
+  background: #2c3e50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+
+
+  position:relative;
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           box-shadow:0 3px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+
+ @viewport{
+    zoom: 1.0;
+    width: extends-to-zoom;
+  }
+
+  @-ms-viewport{
+    width: extends-to-zoom;
+    zoom: 1.0;
+  }
+
+  position:relative;
+   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+           box-shadow:0 3px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+

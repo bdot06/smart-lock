@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <title> Registration </title>
+    <link rel='stylesheet' href='/stylesheets/loginAndReg.css' />
+  </head>
+  <body>
+
+<div class = "wrapped">
+  <div>
+  	<p>Please fill out the fields below then press register. If you already have an account press login.</p>
+
+  	</div>
+<form id = "regForm" action = "" method = "post" >
+ 
+<div>
+<label for = "emailRegBox"> Email Address: </label> 
+<br>
+<input id = "emailRegBox" type = "email" name = "emailRegBox" max = "30" placeholder = "Email">
+ </div>
+
+<div>
+<label for="passwordRegBox"> Password: </label> 
+<br>
+<input id= "passwordRegBox" type ="password" name= "passwordRegBox" max = "30" placeholder = "Password">
+ </div>
+
+<div>
+<label for="verifyBox"> Verify Password: </label> 
+<br>
+<input id= "verifyBox" type ="password" name= "verifyBox" max = "30" placeholder = "Verify Password">
+ </div>
+
+ <div>
+<input id = "regButton" type = "button" Value = "Register">
+
+<input id = "logRegButton" type = "button" Value = "Back to login">
+ </div>
+
+
+</form>
+
+
+    <script src="Javascripts/jquery-3.2.0.min.js"></script>
+    <script src="Javascripts/main.js"></script>
+</div>
+  	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <title> Login </title>
+    <link rel='stylesheet' href='/stylesheets/loginAndReg.css' />
+  </head>
+  <body>
+    <div class = "wrapped">
+    <div>
+  	<p>Please Log in. If you do not have a username and password register now.</p>
+
+  	</div>
+<form id = "loginForm" action = "" method = "post" >
+ 
+<div>
+<label for = "emailBox"> Email Address: </label> 
+<br>
+<input id = "emailBox" type = "email" name = "emailBox" max = "30" placeholder = "Email Address">
+ </div>
+
+<div>
+<label for="passwordBox"> Password: </label> 
+<br>
+<input id= "passwordBox" type ="password" name= "password" max = "30" placeholder = "Password">
+ </div>
+
+ <div>
+<input id = "loginButton" type = "button" Value = "Login">
+
+<input id = "createButton" type = "button" Value = "Register">
+ </div>
+
+
+</form>
+
+
+    <script src="javascripts/jquery-3.2.0.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    </div>
+  </body>
+</html>
