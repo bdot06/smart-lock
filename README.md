@@ -27,7 +27,7 @@ const char* LOSANT_ACCESS_SECRET = "";
 
 **[How to create a losant account and application](https://docs.losant.com/getting-started/losant-iot-dev-kits/builder-kit/)**
 
-(stop after the "generate an Access Key" section")
+(stop after the "generate an Access Key" section)
 
 # create a webhook
  - Click the "webhook" button in the applications tap at the top of the page then click the "add webhook" button in the upper right corner of the page. 
