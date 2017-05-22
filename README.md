@@ -30,11 +30,38 @@ const char* LOSANT_ACCESS_SECRET = "";
 (stop after the "generate an Access Key" section")
 
 # create a webhook
- - Click the "webhook" button in the applications tap at the top of the page then click the "add webhook" button in the upper right corner of the page. Name your webhook "unlock-button", then click "create webhook" at the bottom of the page.
+ - Click the "webhook" button in the applications tap at the top of the page then click the "add webhook" button in the upper right corner of the page. 
+- Name your webhook "unlock-button", then click "create webhook" at the bottom of the page.
 - Copy the url next to the webhook you created.
--go to the "main.js" file in the "javascripts" folder, in the "public" folder, in the "myapp" directory, and paste the webhook url in the get request for "#unlockButton"
--Repeat steps for lock button.
-<img src="public/images/javascript.png" width="846">
+- go to the "main.js" file in the "javascripts" folder, in the "public" folder, in the "myapp" directory, and paste the webhook url in the get request for "#unlockButton"
+- Click the "webhook" button in the applications tap at the top of the page then click the "add webhook" button in the upper right corner of the page. 
+- Name your webhook "lock-button", then click "create webhook" at the bottom of the page.
+- Copy the url next to the webhook you created.
+- go to the "main.js" file in the "javascripts" folder, in the "public" folder, in the "myapp" directory, and paste the webhook url in the get request for "#lockButton"
+```
+/*------------------- Smart Lock Top Page ----------------------------------*/
+
+
+$(document).ready(function() {
+
+$('#logoutButton').click(function(){
+	window.location.href = '/';
+});
+
+$('#unlockButton').click(function() {
+  $.get("");
+  alert('you unlocked the door');
+
+});
+
+$('#lockButton').click(function() {
+  $.get("");
+  alert('you locked the door');
+
+});
+
+});
+```
 
 # create a workflow
 
@@ -42,6 +69,14 @@ Click the "workflow" button in the applications tab at the top of the page and s
 
 <img src="public/images/workflow.png" width="846">
 
+- click on the first webhook on the workflow and on the right hand side of the page, the webhook menu should appear
+- scroll to the bottom and under choose hook, choose the "unlock-button" webhook.
+- click the device command connected to the "unlock-button" webhook and on the right hand side of the page, the device command menu should appear.
+- on the menu, under "command name template" type "unlock"
+- click on the second webhook on the workflow and on the right hand side of the page, the webhook menu should appear
+- scroll to the bottom and under choose hook, choose the "lock-button" webhook.
+- click the device command connected to the "lock-button" webhook and on the right hand side of the page, the device command menu should appear.
+- on the menu, under "command name template" type "lock"
 
 
 # Install all dependencies
