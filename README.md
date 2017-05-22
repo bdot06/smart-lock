@@ -22,4 +22,4 @@ Then use the email address and password that you used to register to log in.
 # How smart-lock works
 
 <img src="public/images/smartLock.png" width="846">
-## The unlock and lock buttons use javascript to communicate with a nodeMCU microcontroller, that I have connected to a motor, to turn the device counter clockwise or clockwise depending on the command.
+The unlock and lock buttons use javascript to communicate with a nodeMCU microcontroller, that I have connected to a motor, to turn the device counter clockwise or clockwise depending on the command.
