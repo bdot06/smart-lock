@@ -1,5 +1,5 @@
 # smart-lock 
-<img src="Screen Shot 2017-05-22 at 7.37.19 AM.png" width="60">
+<img src="public/images/Screen Shot 2017-05-22 at 7.37.19 AM.png" width="60">
 
 ## Installation
 
