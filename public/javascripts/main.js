@@ -8,13 +8,13 @@ $('#logoutButton').click(function(){
 });
 
 $('#unlockButton').click(function() {
-  $.get("https://triggers.losant.com/webhooks/113bNMbmlJFkX8dxQ1eqtoxn5OY8");
+  $.get("");
   alert('you unlocked the door');
 
 });
 
 $('#lockButton').click(function() {
-  $.get("https://triggers.losant.com/webhooks/q1NLymxr3kh1K34EMYWMFZnVVj2P");
+  $.get("");
   alert('you locked the door');
 
 });
