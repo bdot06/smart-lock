@@ -12,7 +12,7 @@
 
 - Connect the NodeMCU to the servo motor. (connect red wire to the VIN pin, the black wire to the GND pin, and the yellow wire to the D2 pin. 
 
-<img src="public/images/wiring.png" width="846">
+<img src="public/images/wiring.jpg" width="500">
 
 - **[NodeMCU Setup](https://docs.losant.com/getting-started/losant-iot-dev-kits/environment-setup/)**
 - Open the `arduinoCode.ino` file from the `arduinoCode` folder in the `myapp` directory.
