@@ -4,11 +4,15 @@
 
 
 # Materials
-- **[NodeMCU Microcontroller](https://www.ebay.com/p/?iid=222176238324&&&chn=ps)**
+- **[NodeMCU Microcontroller](https://www.ebay.com/p/?iid=222176238324&&&chn=ps)** w/ breadboard
 - **[Servo Motor](http://www.kr4.us/servo-large-full-rotation.html?gclid=Cj0KEQjwmIrJBRCRmJ_x7KDo-9oBEiQAuUPKMlA43kGovNUKK3wdQuSmmlrGXM2vgVta6RFsUPTlfocaAtkx8P8HAQ)**
 - Dead Bolt Lock Holder (This is 3d printed, and attaches to the servo motor.)
 
 # Set up nodeMCU Environment
+
+- Connect the NodeMCU to the servo motor. (connect red wire to the VIN pin, the black wire to the GND pin, and the yellow wire to the D2 pin. 
+
+<img src="public/images/wiring.png" width="846">
 
 - **[NodeMCU Setup](https://docs.losant.com/getting-started/losant-iot-dev-kits/environment-setup/)**
 - Open the `arduinoCode.ino` file from the `arduinoCode` folder in the `myapp` directory.
@@ -23,7 +27,7 @@ const char* LOSANT_DEVICE_ID = "";
 const char* LOSANT_ACCESS_KEY = "";
 const char* LOSANT_ACCESS_SECRET = "";
 ```
-
+- Click upload in the upper left hand corner of the Arduino IDE.
 - Create a losant account and application.
 
 **[How to create a losant account and application](https://docs.losant.com/getting-started/losant-iot-dev-kits/builder-kit/)**
