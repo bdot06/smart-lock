@@ -26,7 +26,7 @@ LosantDevice device(LOSANT_DEVICE_ID);
 
 
 void unlock() {
- if (locked == locked) {
+ if (locked) {
     brandonServo.attach(4);
     brandonServo.write(83);              // tell servo to go to position in variable 'pos'
     delay(1000);
@@ -37,7 +37,7 @@ void unlock() {
 }
 
 void lock() {
-  if (locked = !locked) {
+  if (!locked) {
    locked = true;
     brandonServo.attach(4);
     brandonServo.write(102);
