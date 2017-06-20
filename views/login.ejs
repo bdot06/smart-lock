@@ -11,12 +11,12 @@
   	<p>Please Log in. If you do not have a username and password register now.</p>
 
   	</div>
-<form id = "loginForm" action = "" method = "post" >
+<form id = "loginForm" action = "/users/login" method = "POST" >
  
 <div>
-<label for = "emailBox"> Email Address: </label> 
+<label for = "username"> Username: </label> 
 <br>
-<input id = "emailBox" type = "email" name = "emailBox" max = "30" placeholder = "Email Address">
+<input id = "username" type = "text" name = "username" max = "30" placeholder = "Username">
  </div>
 
 <div>
@@ -26,7 +26,7 @@
  </div>
 
  <div>
-<input id = "loginButton" type = "button" Value = "Login">
+<input id = "loginButton" type = "submit" Value = "Login">
 
 <input id = "createButton" type = "button" Value = "Register">
  </div>
