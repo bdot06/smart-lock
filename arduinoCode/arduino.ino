@@ -30,7 +30,6 @@ void unlock() {
     brandonServo.attach(4);
     brandonServo.write(83);              // tell servo to go to position in variable 'pos'
     delay(1000);
-    brandonServo.write(90);
     locked = !locked;
     brandonServo.detach();
  }
@@ -38,12 +37,10 @@ void unlock() {
 
 void lock() {
   if (!locked) {
-   locked = true;
     brandonServo.attach(4);
     brandonServo.write(102);
     delay(1000);
-    brandonServo.write(90);
-
+    locked = true;
     brandonServo.detach();
   }
 }

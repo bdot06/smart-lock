@@ -14,7 +14,7 @@ $(document).ready(function () {
 			alert('you unlocked the door');
 		})
 
-//	});
+	});
 
 	$('#lockButton').click(function () {
 		$.get("/me", function (data) {
@@ -23,7 +23,6 @@ $(document).ready(function () {
 		});
 	});
 
-});
 });
 
 //----------------------------Login Page---------------------------------------
