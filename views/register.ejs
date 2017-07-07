@@ -12,12 +12,21 @@
   <div class="wrapped">
     <div>
       <p>Please fill out the fields below then press register. If you already have an account press login.</p>
-      
+      <% if(errors) {%>
+        <ul>
+          <% errors.forEach(function(error){ %>
+           <li> 
+             <%= error.msg %>
+           </li>
+              <% }); %>
+        </ul>
+        <% } %>
+
     </div>
 
     <form id="regForm" action="/users/register" method="POST">
 
-    <div>
+      <div>
         <label for="userName"> Username </label>
         <br>
         <input id="username" type="text" name="username" max="30" placeholder="Username">
@@ -58,9 +67,9 @@
 
   </div>
 
-    <script src="/javascripts/jquery-3.2.0.min.js"></script>
-    <script src="/javascripts/main.js"></script>
-  
+  <script src="/javascripts/jquery-3.2.0.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+
 </body>
 
 </html>

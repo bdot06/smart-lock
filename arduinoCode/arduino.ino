@@ -26,12 +26,12 @@ LosantDevice device(LOSANT_DEVICE_ID);
 
 
 void unlock() {
- if (locked) {
-    brandonServo.attach(4);
-    brandonServo.write(83);              // tell servo to go to position in variable 'pos'
-    delay(1000);
-    locked = !locked;
-    brandonServo.detach();
+ if (locked) {                          // checks to see if door is locked 
+    brandonServo.attach(4);             // if start the motor
+    brandonServo.write(83);             // speed and direction 
+    delay(1000);                        // how long the motor turns
+    locked = !locked;                   // Changes locked to false
+    brandonServo.detach();              // turn off motor
  }
 }
 

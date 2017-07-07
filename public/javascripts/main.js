@@ -3,6 +3,7 @@
 
 
 $(document).ready(function () {
+	var buttonCount = 0;
 
 	$('#logoutButton').click(function () {
 		window.location.href = '/';
@@ -10,24 +11,36 @@ $(document).ready(function () {
 
 	$('#unlockButton').click(function () {
 		$.get("/me", function (data) {
-			$.get(data.unlockWebhook);
-			alert('you unlocked the door');
+			if (buttonCount == 0) {
+				$.get(data.unlockWebhook, function () {
+					buttonCount = buttonCount + 1;
+					alert('you unlocked the door');					
+				});
+			} else {
+				alert('the door is already unlocked');
+			}
 		})
 
 	});
 
 	$('#lockButton').click(function () {
-		$.get("/me", function (data) {
-			$.get(data.lockWebhook);
-			alert('you locked the door');
-		});
+		if (buttonCount == 1) {
+			$.get("/me", function (data) {
+				$.get(data.lockWebhook);
+				alert('you locked the door');
+				buttonCount = 0;
+			});
+		} else {
+			alert('the door is already locked');
+		}
+
 	});
 
 });
 
 //----------------------------Login Page---------------------------------------
-$(document).ready(function(){
-	$('#createButton').click(function(){
+$(document).ready(function () {
+	$('#createButton').click(function () {
 		window.location.href = '/users/register';
 	});
 });
@@ -35,8 +48,8 @@ $(document).ready(function(){
 
 //-----------------------------Register Page-------------------------------------
 
-$(document).ready(function(){
-	$('#logRegButton').click(function(){
+$(document).ready(function () {
+	$('#logRegButton').click(function () {
 		window.location.href = '/users/login';
 	});
 }); 
